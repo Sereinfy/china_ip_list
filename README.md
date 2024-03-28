@@ -10,6 +10,10 @@ ispip.clang: https://ispip.clang.cn/all_cn.txt
 
 mayaxcn: https://raw.githubusercontent.com/mayaxcn/china-ip-list/master/chnroute.txt
 
+misakaio https://raw.githubusercontent.com/misakaio/chnroutes2/master/chnroutes.txt
+
+PaPerseller https://raw.githubusercontent.com/PaPerseller/chn-iplist/master/chnroute-ipv4.txt
+
 每天零点自动更新
 
 合并程序
