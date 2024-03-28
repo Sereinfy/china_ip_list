@@ -28,12 +28,15 @@ jobs:
 
     - name: Combine
       run: |
+        PaPerseller="$(curl -kLfsm 5 https://raw.githubusercontent.com/PaPerseller/chn-iplist/master/chnroute.txt)"
+        misakaio="$(curl -kLfsm 5 https://raw.githubusercontent.com/misakaio/chnroutes2/master/chnroutes.txt)"
         mayax="$(curl -kLfsm 5 https://raw.githubusercontent.com/mayaxcn/china-ip-list/master/chnroute.txt)"
         ipipnet="$(curl -kLfsm 5 https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt)"
         clang="$(curl -kLfsm 5 https://ispip.clang.cn/all_cn.txt)"
         iplist="$mayax\n$ipipnet\n$clang"
+        biglist="$mayax\n$ipipnet\n$clang\n$misakaio\n$PaPerseller"
         echo -e "${iplist}" | sort | uniq > merger.txt
-
+        echo -e "${biglist}" | sort | uniq > big_merger.txt
     - name: Download Setup 
       run: |
         if [ -f cidr-merger-linux-amd64 ]; then
@@ -46,7 +49,7 @@ jobs:
       run: |
         chmod +x cidr-merger-linux-amd64
         ./cidr-merger-linux-amd64 merger.txt > china_ip_list.txt
-        
+        ./cidr-merger-linux-amd64 bigmerger.txt > china_ip_list_big.txt
     - name: Apply
       run: |
         Emoji=("🎉" "🤞" "✨" "🎁" "🎈" "🎄" "🎨" "💋" "🍓" "🍕" "🍉" "💐" "🌴" "🚀" "🛸" "🗽" "⛅" "🌈" "🔥" "⛄" "🐶" "🏅" "🦄" "🐤")
