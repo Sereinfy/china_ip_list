@@ -34,6 +34,12 @@ jobs:
         iplist="$mayax\n$ipipnet\n$clang"
         echo -e "${iplist}" | sort | uniq > china_ip_list.txt
 
+    - name: Setup Toolchain
+      run: |
+        wget -O https://github.com/zhanhb/cidr-merger/releases/download/v1.1.3/cidr-merger-linux-amd64
+        chmod +x cidr-merger-linux-amd64
+        ./cidr-merger-linux-amd64 china_ip_list.txt > merger.txt
+        
     - name: Apply
       run: |
         Emoji=("🎉" "🤞" "✨" "🎁" "🎈" "🎄" "🎨" "💋" "🍓" "🍕" "🍉" "💐" "🌴" "🚀" "🛸" "🗽" "⛅" "🌈" "🔥" "⛄" "🐶" "🏅" "🦄" "🐤")
