@@ -59,8 +59,8 @@ jobs:
       run: |
         num_merger=`sed -n 's/^! Total count: //p' merger.txt`
         num_list=`sed -n 's/^! Total count: //p' china_ip_list.txt`
-        sed -i 's/^合并前.*/合并前: '$num_rules' /g' README.md
-        sed -i 's/^合并后.*/合并后: '$num_allow' /g' README.md
+        sed -i 's/^合并前.*/合并前: '$num_merger' /g' README.md
+        sed -i 's/^合并后.*/合并后: '$num_list' /g' README.md
         
     - name: Apply
       run: |
