@@ -39,6 +39,7 @@ jobs:
         misakaio2="$(cat new_output.txt)"
         biglist="$qqwry\n$ipipnet\n$clang\n$PaPerseller\n$misakaio2\n$mayax"
         echo -e "${biglist}" | sort | uniq > merger.txt
+        
     - name: Download Setup 
       run: |
         if [ -f cidr-merger-linux-amd64 ]; then
@@ -46,13 +47,21 @@ jobs:
         else
           wget https://github.com/zhanhb/cidr-merger/releases/download/v1.1.3/cidr-merger-linux-amd64
         fi
-    
+
     - name: merger file 
       run: |
         chmod +x cidr-merger-linux-amd64
         ./cidr-merger-linux-amd64 merger.txt > china_ip_list.txt
         rm output.txt
         rm new_output.txt
+
+    - name: clean readme 
+      run: |
+        num_merger=`sed -n 's/^! Total count: //p' merger.txt`
+        num_list=`sed -n 's/^! Total count: //p' china_ip_list.txt`
+        sed -i 's/^合并前.*/合并前: '$num_rules' /g' README.md
+        sed -i 's/^合并后.*/合并后: '$num_allow' /g' README.md
+        
     - name: Apply
       run: |
         Emoji=("🎉" "🤞" "✨" "🎁" "🎈" "🎄" "🎨" "💋" "🍓" "🍕" "🍉" "💐" "🌴" "🚀" "🛸" "🗽" "⛅" "🌈" "🔥" "⛄" "🐶" "🏅" "🦄" "🐤")
