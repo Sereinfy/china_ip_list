@@ -14,14 +14,10 @@
 - misakaio: https://raw.githubusercontent.com/misakaio/chnroutes2/master/chnroutes.txt
 
 - PaPerseller: https://raw.githubusercontent.com/PaPerseller/chn-iplist/master/chnroute-ipv4.txt
-
+<br/>
 虽然整合了这么多，但是合并后减少约50%
-
-```
-合并前:  
-合并后:  
-```
-
+<br/>
+<br/>
 每天零点自动更新
 
 #### 合并程序
