@@ -49,7 +49,7 @@ jobs:
       run: |
         chmod +x cidr-merger-linux-amd64
         ./cidr-merger-linux-amd64 merger.txt > china_ip_list.txt
-        ./cidr-merger-linux-amd64 bigmerger.txt > china_ip_list_big.txt
+        ./cidr-merger-linux-amd64 big_merger.txt > china_ip_list_big.txt
     - name: Apply
       run: |
         Emoji=("🎉" "🤞" "✨" "🎁" "🎈" "🎄" "🎨" "💋" "🍓" "🍕" "🍉" "💐" "🌴" "🚀" "🛸" "🗽" "⛅" "🌈" "🔥" "⛄" "🐶" "🏅" "🦄" "🐤")
