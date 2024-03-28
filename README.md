@@ -15,8 +15,12 @@
 
 - PaPerseller: https://raw.githubusercontent.com/PaPerseller/chn-iplist/master/chnroute-ipv4.txt
 
-
 虽然整合了这么多，但是合并后减少约50%
+
+```
+合并前:
+合并后:
+```
 
 每天零点自动更新
 
