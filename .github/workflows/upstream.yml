@@ -37,9 +37,7 @@ jobs:
         echo "$misakaio" > output.txt
         grep -v '#' output.txt > new_output.txt
         misakaio2="$(cat new_output.txt)"
-        iplist="$qqwry\n$ipipnet\n$clang\n$PaPerseller"
         biglist="$qqwry\n$ipipnet\n$clang\n$PaPerseller\n$misakaio2\n$mayax"
-        echo -e "${iplist}" | sort | uniq > merger_lite.txt
         echo -e "${biglist}" | sort | uniq > merger.txt
     - name: Download Setup 
       run: |
@@ -52,8 +50,9 @@ jobs:
     - name: merger file 
       run: |
         chmod +x cidr-merger-linux-amd64
-        ./cidr-merger-linux-amd64 merger_lite.txt > china_ip_list_lite.txt
         ./cidr-merger-linux-amd64 merger.txt > china_ip_list.txt
+        rm output.txt
+        rm new_output.txt
     - name: Apply
       run: |
         Emoji=("🎉" "🤞" "✨" "🎁" "🎈" "🎄" "🎨" "💋" "🍓" "🍕" "🍉" "💐" "🌴" "🚀" "🛸" "🗽" "⛅" "🌈" "🔥" "⛄" "🐶" "🏅" "🦄" "🐤")
