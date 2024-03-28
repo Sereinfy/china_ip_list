@@ -2,17 +2,19 @@
 
 #### 整合了
 
-纯真库: https://raw.githubusercontent.com/metowolf/iplist/master/data/special/china.txt
+- 纯真库: https://raw.githubusercontent.com/metowolf/iplist/master/data/special/china.txt
 
-ipip.net: https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt
 
-ispip.clang: https://ispip.clang.cn/all_cn.txt
+- ipip.net: https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt
 
-mayaxcn: https://raw.githubusercontent.com/mayaxcn/china-ip-list/master/chnroute.txt
+- ispip.clang: https://ispip.clang.cn/all_cn.txt
 
-misakaio https://raw.githubusercontent.com/misakaio/chnroutes2/master/chnroutes.txt
+- mayaxcn: https://raw.githubusercontent.com/mayaxcn/china-ip-list/master/chnroute.txt
 
-PaPerseller https://raw.githubusercontent.com/PaPerseller/chn-iplist/master/chnroute-ipv4.txt
+- misakaio: https://raw.githubusercontent.com/misakaio/chnroutes2/master/chnroutes.txt
+
+- PaPerseller: https://raw.githubusercontent.com/PaPerseller/chn-iplist/master/chnroute-ipv4.txt
+
 
 虽然整合了这么多，但是合并后减少约50%
 
