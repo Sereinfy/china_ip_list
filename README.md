@@ -24,14 +24,3 @@
 
 https://github.com/zhanhb/cidr-merger
 
-写法学习
-
-https://wiki.imoke.org/Github/cidr-merger(IP%E5%9C%B0%E5%9D%80%E6%AE%B5%E5%90%88%E5%B9%B6%E4%B8%8E%E6%8B%86%E5%88%86)/cidr-merger.html
-
-https://blog.csdn.net/weixin_51326240/article/details/130822236
-
-致谢以上
-
-在线合并
-
-https://cidr-aggregator.pages.dev/
