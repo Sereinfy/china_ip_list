@@ -28,7 +28,7 @@ jobs:
 
     - name: Combine
       run: |
-        PaPerseller="$(curl -kLfsm 5 https://raw.githubusercontent.com/PaPerseller/chn-iplist/master/chnroute-ipv4.txt)"
+
         misakaio="$(curl -kLfsm 5 https://raw.githubusercontent.com/misakaio/chnroutes2/master/chnroutes.txt)"
         mayax="$(curl -kLfsm 5 https://raw.githubusercontent.com/mayaxcn/china-ip-list/master/chnroute.txt)"
         qqwry="$(curl -kLfsm 5 https://raw.githubusercontent.com/metowolf/iplist/master/data/special/china.txt)"
@@ -38,7 +38,7 @@ jobs:
         echo "$misakaio" > output.txt
         grep -v '#' output.txt > new_output.txt
         misakaio2="$(cat new_output.txt)"
-        biglist="$qqwry\n$ipipnet\n$clang\n$PaPerseller\n$misakaio2\n$mayax\n$gaoyifan"
+        biglist="$qqwry\n$ipipnet\n$clang\n$misakaio2\n$mayax\n$gaoyifan"
         echo -e "${biglist}" | sort | uniq > merger.txt
         
     - name: Download Setup 
