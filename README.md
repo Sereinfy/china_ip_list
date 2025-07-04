@@ -12,9 +12,7 @@
 
 - [misakaio](https://github.com/misakaio/chnroutes2): https://raw.githubusercontent.com/misakaio/chnroutes2/master/chnroutes.txt
 
-<br/>
-虽然整合了这么多，但是合并后减少约50%
-<br/>
+
 <br/>
 每天零点自动更新
 
