@@ -2,8 +2,6 @@
 
 #### 整合了
 
-- [纯真库](https://github.com/metowolf/iplist): https://raw.githubusercontent.com/metowolf/iplist/master/data/special/china.txt
-
 - [gaoyifan](https://github.com/gaoyifan/china-operator-ip): https://raw.githubusercontent.com/gaoyifan/china-operator-ip/ip-lists/china.txt
 
 - [ipip.net](https://github.com/17mon/china_ip_list): https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt
