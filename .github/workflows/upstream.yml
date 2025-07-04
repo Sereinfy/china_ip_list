@@ -54,7 +54,7 @@ jobs:
         ./cidr-merger-linux-amd64 merger.txt > china_ip_list.txt
         rm output.txt
         rm new_output.txt
-        
+        rm merger.txt
     - name: Apply
       run: |
         Emoji=("🎉" "🤞" "✨" "🎁" "🎈" "🎄" "🎨" "🍓" "🍕" "🍉" "💐" "🌴" "🚀" "🛸" "🗽" "⛅" "🌈" "🔥" "⛄" "🐶" "🏅" "🦄" "🐤")
