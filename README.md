@@ -1,4 +1,5 @@
 # china_ip_list
+可用于DNS分流，如果用作代理分流推荐单独使用[misakaio](https://github.com/misakaio/chnroutes2)
 
 #### 整合了
 
